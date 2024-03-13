@@ -97,13 +97,17 @@ header {
 
 header #top-controls {
     height: 32px;
-    width: 220px;
+    width: 150px;
+}
+
+header .select-group {
+    padding: 0;
 }
 
 header .select-group select {
     color: white;
-    width: 100%;
-    text-indent: 30px;
+    width: 60px;
+    text-indent: -130px;
     background: black url("../images/language.png") left no-repeat;
     background-size: 20px;
     background-position: 7px;

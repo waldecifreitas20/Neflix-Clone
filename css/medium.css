@@ -7,6 +7,10 @@
         width: 220px;
     }
 
+    header .select-group {
+        padding-right: 10px;
+    }
+
     header .select-group select {
         width: 100%;
         text-indent: 30px;
