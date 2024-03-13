@@ -47,7 +47,6 @@
     outline: none;
 
     transition: background-color 350ms;
-    
 }
 
 .btn-standard:hover {
@@ -134,6 +133,10 @@ header #top-controls {
     font-weight: 900;
 }
 
+#title-section form {
+    position: relative;
+}
+
 #title-section form #email-input {
     background: var(--transparent--dark);
     outline-color: white;
@@ -141,8 +144,15 @@ header #top-controls {
 }
 
 
+#title-section form #form-error-msg {
+    position: absolute;
+    bottom: -25px;
+
+}
+
 #title-section form #get-start-btn {
     width: 36%;
     font-weight: 500;
    
 }
+
