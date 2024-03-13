@@ -92,6 +92,10 @@ header {
     background: linear-gradient(black, transparent);
 }
 
+header .navbar-brand {
+    width: 90px;
+}
+
 header #top-controls {
     height: 32px;
     width: 150px;
