@@ -1,12 +1,91 @@
-:root {
-    --primary : red;
-    --secondary : rgb(26, 26, 105);
-    --tertiary : rgb(105, 26, 52);
-    
-    --transparent-dark : rgba(0, 0, 0, 0.315);
-    --transparent-light : rgba(255, 255, 255, 0.315);
-    
-    --input-color: rgba(0, 53, 167, 0.534);
-    --gray : gray;
+.primary {
+    background: red;
+}
+
+.secondary {
+    background: rgb(26, 26, 105);
+}
+
+.tertiary {
+    background: rgb(105, 26, 52);
+}
+
+.transparent-dark {
+    background: rgba(0, 0, 0, 0.315);
+}
+
+.transparent-light {
+    background: rgba(255, 255, 255, 0.315);
+}
+
+.input {
+    background-color: rgba(0, 53, 167, 0.534);
+}
+
+.gray {
+    background: gray;
+}
+
+body {
+    color: white;
+    font-weight: 500;
+    background-color: black;
 
 }
+
+.container {
+    width: 75%;
+}
+
+#background  {
+    background: black url("../images/bg.jpg") center no-repeat;
+    background-size: 120%;
+    height: 100vh;
+    width: 100vw;
+    z-index: -10;
+   
+    opacity: .30;
+    position: fixed;
+    top: 0;
+    z-index: -100;
+    
+    position: absolute;
+}
+
+header {
+    z-index: 1;
+    top: 0;
+
+    background: linear-gradient(black, transparent);
+}
+
+#top-controls {
+    height: 32px;
+    width: 220px;
+}
+
+#language {
+    color: white;
+    width: 140px;
+    
+    text-indent: 30px;
+
+    background: black url("https://cdn-icons-png.flaticon.com/512/1194/1194264.png") left no-repeat;
+
+    background-size: 20px;
+
+
+}
+
+#sign-in {
+    width: 70px;
+    font-size: .9em;
+    font-weight: 500;
+}
+
+#language, 
+#sign-in {
+    padding: 0;
+    display: block;
+    height: 100%;
+} 
