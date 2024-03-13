@@ -130,7 +130,6 @@ header .select-group select {
 /* --------------- */
 
 #title-section {
-    width: 58%;
     height: 450px;
 }
 
@@ -146,18 +145,15 @@ header .select-group select {
     background: var(--transparent--dark);
     outline-color: white;
     outline-width: 1px;
-}
-
-
-#title-section form #form-error-msg {
-    position: absolute;
-    bottom: -25px;
-
+    margin: 10px 0;
 }
 
 #title-section form #get-start-btn {
-    width: 36%;
+    width: 180px;
     font-weight: 500;
-   
 }
 
+#title-section form #email-input,
+#title-section form #get-start-btn {
+    height: 50px;
+}

@@ -15,4 +15,12 @@
         width: 100%;
         text-indent: 30px;
     }
+
+
+    #title-section form #form-error-msg {
+        position: absolute;
+        bottom: -25px;
+    
+    }
+    
 }
