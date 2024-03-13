@@ -7,24 +7,34 @@ const errorText = document.getElementById("form-error-msg");
 
 const errorIconHtml = '<i class="fa-regular fa-circle-xmark"></i> ';
 
+inputEmail.addEventListener('input', e => {
+    checkEmailRequirements();
+});
+
 btnGetStarted.addEventListener('click', e => {
-    e.preventDefault();
-    
+    e.preventDefault(); // prevent form submit
+    checkEmailRequirements();
+});
+
+
+const checkEmailRequirements = () => {
     const userEmail = inputEmail.value;
+
     if(userEmail.trim() == '') {
         inputEmail.classList.add('is-invalid');
         errorText.innerHTML = `${errorIconHtml} Email is required`;
-
         return;
     }
 
     if(!isValidEmail(userEmail)) {
         inputEmail.classList.add('is-invalid');
+        errorText.innerHTML = `${errorIconHtml} Please enter a valid email address`;
     } else {
-        alert("valid email")
+        errorText.innerHTML = '';
+        inputEmail.classList.remove('is-invalid');
+        inputEmail.classList.add('is-valid');
     }
-
-});
+}
 
 const isValidEmail = email => {
     const hasAddressSign = email.indexOf('@') != -1;
@@ -32,3 +42,4 @@ const isValidEmail = email => {
 
     return hasDot == true && hasAddressSign == true;
 }
+
