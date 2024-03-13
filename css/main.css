@@ -67,9 +67,6 @@ body {
 
 }
 
-.container {
-    width: 75%;
-}
 
 #background {
     background: black url("../images/bg.jpg") center no-repeat;
