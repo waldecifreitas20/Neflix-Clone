@@ -1,0 +1,14 @@
+@media (min-width: 577px) {
+    .container {
+        width: 75%;
+    }
+    
+    header #top-controls {
+        width: 220px;
+    }
+
+    header .select-group select {
+        width: 100%;
+        text-indent: 30px;
+    }
+}
