@@ -16,6 +16,9 @@
         text-indent: 30px;
     }
 
+    #title-section form .row{
+        justify-content: space-between;
+    }
 
     #title-section form #form-error-msg {
         position: absolute;
