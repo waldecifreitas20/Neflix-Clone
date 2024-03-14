@@ -3,7 +3,7 @@
     --color-primary-dark: rgb(175, 0, 0);
     --color-secondary: rgb(26, 26, 105);
     --color-tertiary: rgb(105, 26, 52);
-    
+
     --transparent--dark: rgba(0, 0, 0, 0.315);
     --transparent-light: rgba(255, 255, 255, 0.315);
     --dimmed-text: rgba(255, 255, 255, 0.589);
@@ -135,6 +135,7 @@ header .select-group select {
 
 #title-section {
     height: 450px;
+    justify-content: center;
 }
 
 #title-section h1 {
@@ -145,7 +146,7 @@ header .select-group select {
     position: relative;
 }
 
-#title-section form .row{
+#title-section form .row {
     justify-content: center;
 }
 
@@ -157,8 +158,14 @@ header .select-group select {
 }
 
 #title-section form #get-start-btn {
-    width: 170px;
+    width: 160px;
+    padding-left: 10px;
     font-weight: 500;
+    font-size: 1.2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around
 }
 
 #title-section form #email-input,

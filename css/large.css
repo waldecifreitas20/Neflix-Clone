@@ -1,13 +1,36 @@
 @media (min-width: 992px) {
     #background {
-        /* height: 100vh;
-        width: 100vw; */
+        background-size: 100%;
+
     }
-    
-    
-    
+
+
+
     header .navbar-brand {
         width: 148px;
     }
-    
+
+    #title-section {
+        width: 600px;
+        justify-content: end;
+
+    }
+
+    #title-section #title {
+        font-size: 3.6em;
+    }
+    #title-section #subtitle {
+        font-size: 1.2em;
+    }
+
+    #title-section form #email-input,
+    #title-section form #get-start-btn {
+        height: 55px;
+    }
+
+    #title-section form #get-start-btn  {
+        font-size: 1.5em;
+        
+    }
+
 }
